@@ -19,9 +19,10 @@ import {
     next,
     webdev,
     chat,
-    chess,
     threejs,
     ecommerce,
+    aiEnhancer,
+    codeReview
   } from "../assets";
   
   export const navLinks = [
@@ -39,24 +40,25 @@ import {
     },
   ];
   
-  const services = [
-    {
-      title: "Web Developer",
-      icon: web,
-    },
-    {
-      title: "React Native Developer",
-      icon: mobile,
-    },
-    {
-      title: "Backend Developer",
-      icon: backend,
-    },
-    {
-      title: "Content Creator",
-      icon: creator,
-    },
-  ];
+ const services = [
+  {
+    title: "Full-Stack Web Developer",
+    icon: web,
+  },
+  {
+    title: "Frontend Developer (React & Next.js)",
+    icon: mobile,
+  },
+  {
+    title: "Backend Developer (Node.js & Express)",
+    icon: backend,
+  },
+  {
+    title: "3D & Interactive Experience Developer (Three.js)",
+    icon: creator,
+  },
+];
+
   
   const technologies = [
     {
@@ -110,52 +112,52 @@ import {
   ];
   
   const experiences = [
-    {
-      title: "React.js Developer",
-      icon: react,
-      iconBg: "#383E56",
-      points: [
-        "Developing and maintaining web applications using React.js and other related technologies.",
-        "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
-        "Implementing responsive design and ensuring cross-browser compatibility.",
-        "Participating in code reviews and providing constructive feedback to other developers.",
-      ],
-    },
-    {
-      title: "Next.js",
-      icon: next,
-      iconBg: "#E6DEDD",
-      points: [
-       "Developing and maintaining web applications using Next.js and its ecosystem.",
-       "Collaborating with cross-functional teams, including designers, product managers, and other developers, to deliver high-quality, server-rendered React applications.",
-       "Implementing responsive design principles and ensuring cross-browser compatibility with Next.js features.",
-       "Participating in code reviews and providing constructive feedback to enhance code quality and maintainability in Next.js projects."
-      ],
-    },
-    {
-      title: "Web Developer",
-      icon: webdev,
-      iconBg: "#383E56",
-      points: [
-        "Developing and maintaining web applications using React.js and other related technologies.",
-        "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
-        "Implementing responsive design and ensuring cross-browser compatibility.",
-        "Participating in code reviews and providing constructive feedback to other developers.",
-      ],
-    },
-    {
-      title: "Full stack Developer",
-      icon: node,
-      iconBg: "#E6DEDD",
-      points: [
-        "Developing and maintaining web applications using React.js and other related technologies.",
-        "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
-        "Implementing responsive design and ensuring cross-browser compatibility.",
-        "Participating in code reviews and providing constructive feedback to other developers.",
-      ],
-    },
-  ];
-  
+  {
+    title: "React.js Developer",
+    icon: react,
+    iconBg: "#383E56",
+    points: [
+      "Building and maintaining interactive UI components using React.js.",
+      "Integrating APIs and managing application state using tools like Redux and Context API.",
+      "Implementing responsive, mobile-friendly layouts with clean and reusable components.",
+      "Reviewing code, improving performance, and ensuring high-quality user experience.",
+    ],
+  },
+  {
+    title: "Next.js Developer",
+    icon: next,
+    iconBg: "#E6DEDD",
+    points: [
+      "Developing high-performance web applications using Next.js, server-side rendering, and static generation.",
+      "Working closely with designers and product teams to implement modern UI/UX.",
+      "Optimizing pages for SEO, speed, and scalability using Next.js best practices.",
+      "Maintaining clean code standards through reviews, refactoring, and documentation.",
+    ],
+  },
+  {
+    title: "Web Developer",
+    icon: webdev,
+    iconBg: "#383E56",
+    points: [
+      "Creating responsive and user-friendly websites using HTML, CSS, JavaScript, and modern frameworks.",
+      "Ensuring cross-browser compatibility and performance optimization.",
+      "Collaborating with teams to translate ideas into functional, high-quality web experiences.",
+      "Debugging issues and improving UI/UX to enhance user engagement.",
+    ],
+  },
+  {
+    title: "Full Stack Developer (MERN)",
+    icon: node,
+    iconBg: "#E6DEDD",
+    points: [
+      "Building complete MERN stack applications with REST APIs, authentication, and database integration.",
+      "Working with Node.js, Express, and MongoDB to develop scalable backend architectures.",
+      "Implementing CRUD operations, user management, and secure API endpoints.",
+      "Deploying full-stack applications and ensuring smooth client-server communication.",
+    ],
+  },
+];
+
   const testimonials = [
     {
       testimonial:
@@ -230,27 +232,52 @@ import {
       image: chat,
       source_code_link: "https://github.com/Manishj2002/chat-app",
     },
+
     {
-      name: "Chess",
-      description:
-       "Online chess platform that lets users play, compete, and improve their skills through real-time matches, offering a sophisticated and engaging experience for players of all levels.",
-      tags: [
-        {
-          name: "ejs",
-          color: "blue-text-gradient",
-        },
-        {
-          name: "TailwindCSS",
-          color: "green-text-gradient",
-        },
-        {
-          name: "Socket.io",
-          color: "pink-text-gradient",
-        },
-      ],
-      image: chess,
-      source_code_link: "https://github.com/Manishj2002/Chess",
+  name: "AI Image Enhancer",
+  description:
+    "An AI-powered image enhancement tool built with React, allowing users to drag and drop images for instant quality improvement. The app uses advanced AI processing to upscale, sharpen, and enhance image clarity with a seamless and interactive user experience.",
+  tags: [
+    {
+      name: "React",
+      color: "blue-text-gradient",
     },
+    {
+      name: "AI",
+      color: "green-text-gradient",
+    },
+    {
+      name: "TailwindCSS",
+      color: "pink-text-gradient",
+    },
+  ],
+  image: aiEnhancer, // add your image import
+  source_code_link: "https://github.com/Manishj2002/react-ai-image-enhancer", // update if needed
+},
+
+{
+  name: "AI Code Reviewer",
+  description:
+    "A smart code review tool built using the Gemini AI API, allowing developers to paste or upload code for instant feedback. The app analyzes code quality, detects errors, and provides improvement suggestions, helping developers write cleaner and more optimized code.",
+  tags: [
+    {
+      name: "React",
+      color: "blue-text-gradient",
+    },
+    {
+      name: "GeminiAI",
+      color: "green-text-gradient",
+    },
+    {
+      name: "TailwindCSS",
+      color: "pink-text-gradient",
+    },
+  ],
+  image: codeReview, // add your image import
+  source_code_link: "https://github.com/Manishj2002/code-review", // update only if repo name is different
+},
+
+    
   ];
   
   export { services, technologies, experiences, testimonials, projects };

@@ -31,7 +31,8 @@ const About = () => {
     </motion.div>
 
     <motion.p variants={fadeIn("","",0.1,1)} className='mt-4 text-secondary text-[17px max-w-3xl leading-[30px]]'>
-      I'm a skilled software developer with experience in javaScript,and expertise in frameworks like React,Node.js,Next.js and Three.js. I'm a quick learner and collaborate closely with clients to create efficient,scalable,and user-friendly solutions that solve real-world problems. Let's work together to bring your idea to life!
+      I'm a dedicated full-stack developer with strong expertise in JavaScript and hands-on experience with React, Node.js, Next.js, and Three.js. I’m a fast learner who enjoys creating efficient, scalable, and user-centric applications.
+
     </motion.p>
 
     <div className='mt-20 flex flex-wrap gap-10'>

@@ -28,7 +28,8 @@ import webdev from "./company/web.png";
 import ecommerce from "./ecommerce.png";
 import chat from "./chatapp.webp";
 import chess from "./chess.webp";
-
+import aiEnhancer from "./aiEnhancer.webp";
+import codeReview from "./codeReview.webp";
 export {
   logo,
   backend,
@@ -57,4 +58,8 @@ export {
   ecommerce,
   chat,
   chess,
+  aiEnhancer,
+  codeReview
 };
+
+
